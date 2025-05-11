@@ -40,7 +40,7 @@ function App() {
         setUserDetails(data);
       })
       .catch((err) => console.error('Error loading user:', err));
-  }, []);
+  }, [baseUrl]);
 
   const handleUserDetails = (e, key) => {
     setUserDetails({ ...userDetails, [key]: e.target.value });
